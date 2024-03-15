@@ -1,0 +1,352 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.head{
+  padding: 10px 0px 60px 0px;
+  display: flex;
+  /* border: 0.5px solid rgb(163, 163, 163);
+  border-radius: 10px; */
+  padding: 1rem;
+  justify-content: space-between;
+
+}
+.head ul{
+  
+  display:flex ;
+  gap:1rem;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0px;
+}
+.head li:hover{
+  background-color:#6bb2bd;
+
+}
+
+.input-container{
+  border-radius: 10px;
+  box-shadow: 0 0 20px 20px rgb(190, 184, 184);
+  background: rgba(201, 92, 92, 0.603);
+  flex-direction: column;
+  width: 330px;
+  padding: 9px;
+  height: 270px;
+  /* align-items: center; */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5); 
+  margin: 1rem auto;
+
+}
+
+/* .input1{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 15rem 7rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 400px;
+  height: 300px;
+  flex-grow: 1; 
+} */
+
+.bg-image{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/event.jpg");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.bg-image::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:  0;
+  background-color: rgba(0,0,0,0.55);
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+  color: #ffffff;
+}
+.content >h1{
+  font-size: 1cm;
+  font-weight: 300px;
+  transition: all;
+}
+.content >h2{
+  font-size: 0.7cm;
+  font-weight: 250px;
+}
+.bg-image2{
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 70vh;
+  border-radius: 5px;
+  background-image: url("/homwevent.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  margin: 60px 70px 0px 150px;
+}
+.services{
+  position: absolute;
+  text-align: justify;
+  /* transform: translate( -50%, -50% ); */
+  /* margin-right: 20px; */
+  top:120%;
+  left: 50%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 100px 140px 0px;
+}
+
+.about-content{
+  display:contents;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  text-align: center;
+  color: #72b1bd;
+}
+.about-content > h1{
+  font-size: 1.4cm;
+  font-weight: 200px;
+  color: #2b3f42;
+}
+.about-content > h4{
+  font-size: 20px;
+  font-weight: 200px;
+  color: #406066;
+  text-align: justify;
+}
+.Events1{
+  text-align: center;
+  align-items: center;
+}
+.service-list{
+  display: flex;
+  /* margin-top: 20px; */
+  text-align: center;
+  align-items: center;
+  
+} 
+
+.service-list1{
+  /* margin-left: 2%; */
+  width: 300px;
+  height: 300px;
+  transition: all ease-in-out 0.2s;
+  padding: 10px;
+  align-items: center;
+  animation: swipe 5000ms linear infinite;
+}
+@keyframes swipe{
+  0% {
+    transform: translateX(0) ;
+  }
+  100%{ 
+    transform: translateX(-50%) ;
+  }
+}
+.service-list1:hover{
+  transform: scale(1.1);
+}
+
+.ser-img{
+  display: flex;
+  width: 300px;
+  height: 350px;
+  padding: 10px;
+  border-radius: 10%;
+  
+}
+.ser-title{
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 10%;
+}
+.ser-des{
+  color: black;
+  margin-bottom: 3px;
+  margin-left: 10%;
+
+}
+.sub{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+  margin: 0px 50px 0px 150px;
+  justify-content: space-around;
+}
+.sub1{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px;
+  gap: 20px;
+  margin: 0px 50px 0px 150px;
+  justify-content: space-evenly;
+
+}
+.sub-title1{
+  margin: 20px;
+}
+.sub-title2{
+  margin: 20px;
+}
+.name{
+  font-size: 30px;
+  font-weight: bold;
+}
+.bg-image1{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-image: url("/envelop.gif");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.bg-image1::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:  0;
+  background-color: rgba(0,0,0,0.55);
+}
+
+.for{
+  text-align: center;
+  font-weight: 300px;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50% );
+  color: #ffffff;
+}
+
+.register{
+  text-align: center;
+  font-weight: 300px;
+  font-size: 1.4rem;
+  padding: 20px;
+}
+.reg-button{
+  align-items: center;
+  padding : 0px 150px 0px 30%;
+  color: #fff;
+  text-align: center;
+}
+
+.main >h2{
+  text-align: center;
+  font-weight: 300px;
+  font-size: 0.9cm;
+}
+.input{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 15rem 7rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #62d1c8;
+  max-width: 330px;
+  height: 200px;
+  flex-grow: 1; 
+}
+.input-login{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  background: #fff;
+  max-width: 400px;
+  height: 300px;
+  flex-grow: 1; 
+  
+}
+.container{
+  margin: 0.5rem;
+}
+.container1{
+  justify-content: space-evenly;
+  margin: 0;
+}
+form label{
+  margin: 0px;
+}
+
+form input{
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 300px;
+}
+form button{
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: 1px solid grey;
+  background-color: #f4f4f4;
+  cursor: pointer;
+}
+form button:hover{
+  background-color: grey;
+}
+form .error{
+  color: red;
+  font-size: 12px;
+  margin: 0 0 0.75rem 0;
+}
+form sup{
+  color: red;
+}
+
+.input-containers{
+  border-radius: 4px;
+  border: 1px solid grey;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5); 
+  margin: 1rem auto;
+
+}
